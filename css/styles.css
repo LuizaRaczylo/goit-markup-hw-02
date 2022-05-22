@@ -11,13 +11,15 @@ body {
     --detail-font: 14px;
     --subject-font: 16px;
 }
-.logotype {
+.logotype, .footer-link {
     font-family: 'Raleway', sans-serif;
     font-style: Bold;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 3%;
-    color: #000000;
+}
+.logotype {
+    color:#000000;
 }
 .logotype, .designation, .navigation, .category {
     text-align: left;
@@ -31,13 +33,13 @@ h1, .order, h2, .team .name, .team p, .filter [type="button"] {
 .highlight {
     color: var(--brand-color);
 }
-.footer .dark {
+.footer-link {
     color: var(--bright-color);
 }
 ul {
     list-style-type: none;
 }
-.link {
+.link, .footer-link {
     text-decoration: none;
 }
 .navigation {
@@ -49,16 +51,18 @@ ul {
     text-shadow: 0px, 4px, 4px, #000000;
 }
 .link:hover,
-.link:focus {
+.link:focus,
+.footer-link:hover,
+.footer-link:focus {
     color: var(--brand-color);
 }
 .contact {
     color: var(--detail-color);
 }
 .head {
-    width: 1600;
-    height: 600;
-    top: 80;
+    width: 1600px;
+    height: 600px;
+    margin-top: 80px;
     background-color: var(--body-color);
 }
 h1 {
@@ -74,7 +78,8 @@ h1 {
     background-color: var(--brand-color);
     width: 200px;
     height: 50px;
-    top: 430px;
+    margin-top: 430px;
+    margin-left: 700px;
     font-size: var(--subject-font);
     font-weight: 700;
     font-style: bold;
