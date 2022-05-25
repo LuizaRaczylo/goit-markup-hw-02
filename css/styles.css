@@ -21,13 +21,13 @@ body {
 .logotype {
     color:#000000;
 }
-.logotype, .designation, .navigation, .category {
+.logotype, .offer-item, .navigation, .offer-category {
     text-align: left;
 }
-.logotype, .navigation, h1, .designation, .category {
+.logotype, .navigation, .head-title, .offer-item, .offer-category {
     vertical-align: top;
 }
-h1, .order, h2, .team .name, .team p, .filter [type="button"] {
+.head-title, .head-button, .expansion-title, .team-title, .team-name, .filter-button {
     text-align: center;
 }
 .highlight {
@@ -65,7 +65,7 @@ ul {
     margin-top: 80px;
     background-color: var(--body-color);
 }
-h1 {
+.head-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -73,8 +73,8 @@ h1 {
     border-color: #000000;
     text-shadow: 0px, 4px, 4px, #000000;
 }
-.head> .order,
-.head>.order:active {
+.head> .head-button,
+.head>.head-button:active {
     background-color: var(--brand-color);
     width: 200px;
     height: 50px;
@@ -88,37 +88,37 @@ h1 {
     border: none;
     border-radius: 4px;
 }
-h1, .order {
+.head-title, .head-button {
     color: var(--bright-color);}
-.contents h3 {
+.contents-title {
     font-size: var(--detail-font);
     line-height: 1.14;
     letter-spacing: 3%;
 }
-.contents p{
+.contents-text {
     color: var(--detail-color);
     font-size: var(--detail-font);
     line-height: 1.71;
     letter-spacing: 3%;
 }
-h2 {
+.expansion-title, .team-title {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 3%;
 }
-.team .name {
-    color:#212121;
-    font-style: medium;
-    font-weight: 500;
+.team-name {
     font-size: var(--subject-font);
     line-height: 1.17;
     letter-spacing: 3%;
 }
-.team p {
+.team-name-line1 {
+    color: #212121;
+    font-style: medium;
+    font-weight: 500;
+}
+.team-name-line2 {
     color: var(--detail-color);
     font-size: var(--subject-font);
-    line-height: 1.17;
-    letter-spacing: 3%;
 }
 .footer {
     width: 1600px;
@@ -126,17 +126,17 @@ h2 {
     top: 2097px;
     background-color: var(--body-color);
 }
-address {
+.footer-address {
     color: var(--bright-color);
     font-style: normal;
     font-size: var(--detail-font);
     line-height: 1.71;
     letter-spacing: 3%;
 }
-address .link {
+.footer-address .link {
     color: #FFFFFF99;
 }
-.filter [type=button] {
+.filter-button {
     background-color: #F5F4FA;
     font-family: Roboto;
     font-style: medium;
@@ -159,7 +159,7 @@ address .link {
     border-radius: 4px;
     cursor: pointer;
 }
-.designation {
+.offer-item {
     color: #212121;
     font-style: bold;
     font-weight: 700;
@@ -167,7 +167,7 @@ address .link {
     line-height: 2;
     letter-spacing: 6%;
 }
-.category {
+.offer-category {
     color: var(--detail-color);
     font-size: var(--subject-font);
     line-height: 1.875;
