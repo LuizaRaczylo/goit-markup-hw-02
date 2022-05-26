@@ -53,8 +53,13 @@ ul {
 .link:hover,
 .link:focus,
 .footer-link:hover,
-.footer-link:focus {
+.footer-link:focus,
+.footer-address .link:hover,
+.footer-address .link:focus {
     color: var(--brand-color);
+}
+.footer-address .link {
+    color: #FFFFFF99;
 }
 .contact {
     color: var(--detail-color);
@@ -132,9 +137,6 @@ ul {
     font-size: var(--detail-font);
     line-height: 1.71;
     letter-spacing: 3%;
-}
-.footer-address .link {
-    color: #FFFFFF99;
 }
 .filter-button {
     background-color: #F5F4FA;
