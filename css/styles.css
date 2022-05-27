@@ -13,10 +13,8 @@ body {
 }
 .logotype, .footer-link {
     font-family: 'Raleway', sans-serif;
-    font-style: Bold;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 3%;
 }
 .logotype {
     color:#000000;
@@ -43,25 +41,29 @@ ul {
     text-decoration: none;
 }
 .navigation {
-    font-style: medium;
     font-weight: 500;
     font-size: var(--detail-font);
     line-height: 1.14;
-    letter-spacing: 2%;
-    text-shadow: 0px, 4px, 4px, #000000;
+}
+.navigation .link:visited {
+    color:#212121;
 }
 .link:hover,
 .link:focus,
 .footer-link:hover,
 .footer-link:focus,
 .footer-address .link:hover,
-.footer-address .link:focus {
+.footer-address .link:focus,
+.navigation .link:hover,
+.navigation .link:focus {
     color: var(--brand-color);
 }
-.footer-address .link {
+.footer-address .link,
+.footer-address .link:visited {
     color: #FFFFFF99;
 }
-.contact {
+.contact,
+.contact .link:visited {
     color: var(--detail-color);
 }
 .head {
@@ -71,12 +73,8 @@ ul {
     background-color: var(--body-color);
 }
 .head-title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 6%;
-    border-color: #000000;
-    text-shadow: 0px, 4px, 4px, #000000;
 }
 .head> .head-button,
 .head>.head-button:active {
@@ -87,9 +85,7 @@ ul {
     margin-left: 700px;
     font-size: var(--subject-font);
     font-weight: 700;
-    font-style: bold;
     line-height: 1.875;
-    letter-spacing: 6%;
     border: none;
     border-radius: 4px;
 }
@@ -98,27 +94,22 @@ ul {
 .contents-title {
     font-size: var(--detail-font);
     line-height: 1.14;
-    letter-spacing: 3%;
 }
 .contents-text {
     color: var(--detail-color);
     font-size: var(--detail-font);
     line-height: 1.71;
-    letter-spacing: 3%;
 }
 .expansion-title, .team-title {
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 3%;
 }
 .team-name {
     font-size: var(--subject-font);
     line-height: 1.17;
-    letter-spacing: 3%;
 }
 .team-name-line1 {
     color: #212121;
-    font-style: medium;
     font-weight: 500;
 }
 .team-name-line2 {
@@ -136,12 +127,10 @@ ul {
     font-style: normal;
     font-size: var(--detail-font);
     line-height: 1.71;
-    letter-spacing: 3%;
 }
 .filter-button {
     background-color: #F5F4FA;
     font-family: Roboto;
-    font-style: medium;
     font-size: var(--subject-font);
     font-weight: 500;
     border: none;
@@ -163,15 +152,12 @@ ul {
 }
 .offer-item {
     color: #212121;
-    font-style: bold;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 6%;
 }
 .offer-category {
     color: var(--detail-color);
     font-size: var(--subject-font);
     line-height: 1.875;
-    letter-spacing: 3%;
 }
